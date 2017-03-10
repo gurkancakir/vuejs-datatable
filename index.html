@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+  <link rel="stylesheet" href="public/css/semantic.min.css">
+</head>
+<body>
+
+  <div id="app" class="ui container" style="margin-top: 100px;">
+    <p v-if="isLoading">Loading...</p>
+
+    <list
+    :model=users
+    :fields=fields
+    :headers=headers
+    :max=4
+    ></list>
+  </div>
+
+
+  <script src="public/js/jquery.min.js"></script>
+  <script src="public/js/semantic.min.js"></script>
+  <script src="public/js/vue.js"></script>
+  <script src="public/js/app.js"></script>
+</body>
+</html>
